@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+/*
+body {
+     opacity: 0; Page loads invisible 
+    transition: opacity 1s ease-in; 
+}
+
+body.fade-in {
+    opacity: 1; visible
+}*/
+
+html {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-weight: 750;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+button {
+    text-align: center;
+    background-color: #9391ff;
+    color: white;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+header {
+    background-color: #f2f2ff;
+    padding: 10px 20px;
+}
+
+.page-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    padding-top: 10px;
+    max-width: 30%;
+    height: auto;
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: 5px solid transparent; /*Making a default transparent border */
+    background-color: transparent; /*Making a default transparent background */
+    transition: border-color 0.3s ease; /*When hovering over the element it changes colour */
+    opacity: 1; /* Fully Visible */
+    transition: opacity 0.3 ease;
+}
+
+.logo:hover{
+    border-color: #9391ff;
+    color: white;
+    opacity: 0.5;
+}
+
+.profile-icon {
+    width: 85px;
+    height: 85px;
+    border-radius: 100px;
+    border: 5px solid transparent; /*Making a default transparent border */
+    background-color: transparent; /*Making a default transparent background */
+    transition: border-color 0.3s ease; /*When hovering over the element it changes colour */
+    opacity: 1; /* Fully Visible */
+    transition: opacity 0.3 ease;
+}
+
+.profile-icon:hover{
+    border-color: #9391ff;
+    color: white;
+    opacity: 0.5;
+}
+
+.nav-topics {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-topics li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 10px;
+    border: 2px solid transparent; /*Making a default transparent border */
+    border-radius: 500px;
+    background-color: transparent; /*Making a default transparent background */
+    transition: border-color 0.3s ease; /*When hovering over the element it changes colour */
+}
+
+.nav-topics li a:hover {
+    border-color: #9391ff;
+    background-color: #9391ff;
+    color: white;
+}
+
+.nav-topics li a.active {
+    border-color: #9391ff;
+    background-color: #9391ff;
+    color: white;
+}
+
+.nav-and-profile-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    flex-grow: 1;
+    max-width: 50%;
+ }
+
+ .footer-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+ }
+
+ .footer-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;  
+    padding: 10px 10px;
+    border: 2px solid transparent; /*Making a default transparent border */
+    border-radius: 500px;
+    background-color: transparent; /*Making a default transparent background */
+    transition: border-color 0.3s ease; /*When hovering over the element it changes colour */  
+ }
+ 
+ .footer-links li a:hover {
+    border-color: #9391ff;
+    background-color: #9391ff;
+    color: white;
+}
+
+
+ footer {
+    background-color: #f2f2ff;
+    padding: 50px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }

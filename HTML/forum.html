@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Forums Testing</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+    </head>
+    <body>
+
+        <div id="header"></div>
+            <!--Placeholder for the header-->
+        </div>
+
+        <div class="page-content">
+
+        <h1>Discussion Forum</h1>
+        <div id="comment-prompt">
+            <p>Your insights are important to us and are essential to creating a community dedicated to helping one another. Share your thoughts on mental health and connect with others for support!</p>
+            
+            <button type="start-new">Start a discussion</button>
+
+        </div>
+
+        <!-- add hard-coded comments for prototype -->
+        <div id="discussion-box">
+
+        </div>
+
+        <!-- should only pop up when user presses button for "Start a discussion" or "Reply to post" -->
+        <!-- You must not use HTML5 attributes for error handling -- this must be implemented via JavaScript and
+        PHP only -->
+        <div id="form-comment">
+            <label for="subject-ta">Add Subject:</label>
+            <textarea id="subject-ta" name="addsubject" rows="1" cols="50"></textarea>
+            <span id="errorSubject"></span>
+            <br>
+
+            <label for="content-ta">Add Content:</label>
+            <textarea id="content-ta" name="addcontent" rows="5" cols="50"></textarea>
+            <span id="errorContent"></span>
+            <br>    
+
+            <label for="topic-ta">Add Topic Tags:</label>
+            <textarea id="topic-ta" name="addtags" rows="1" cols="50"></textarea>
+            <span id="errorTopic"></span>
+            <!-- after every space bar add # to the start of the word -->
+            <br>
+
+            <!-- make better submit button -->
+            <label for="image-add">Attach Image:</label>
+            <input type="image" id="image-add">
+            <br>
+
+            <button type="post-new">Post comment</button>
+        </div>
+        </div>
+
+        <div id="footer"></div>
+        <!--Placeholder for the footer-->
+        </div>
+
+        <script src="../SCRIPTS/scripts.js"></script>
+
+        <script>
+            window.onload = function() {
+                //fadeIn();
+                loadHeader(); 
+                loadFooter();
+            }
+        </script>
+
+    </body>
+</html>
